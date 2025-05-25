@@ -7,7 +7,9 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
         <!-- Styles -->
         <style>
@@ -18,34 +20,34 @@
 
         <style>
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Poppins', sans-serif;
             }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: relative; z-index: 10;">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white" style="position: relative; z-index: 10;">
+            <div class="container-fluid p-0"  style="margin-top: 16px; margin-bottom: 16px; margin-left: 128px; margin-right: 128px">
                 <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                     <div class="d-flex justify-content-between align-items-center w-100">
                         <!-- Logo di kiri -->
-                        <img src="{{ asset('storage/img/icon.jpg') }}" alt="Foto" width="50" height="50" style="object-fit: cover">
+                        <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
         
                         <!-- Menu di kanan -->
                         <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size: 20px" href="#AboutUs">About Us</a>
+                                <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size: 20px" href="#">Portofolio</a>
+                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size: 20px" href="#">Expertise</a>
+                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size: 20px" href="#">Testimonials</a>
+                                <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="font-size: 20px" href="#">Lets Talk</a>
+                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
                             </li>
                         </ul>
                     </div>
@@ -59,43 +61,62 @@
                 </button>
             </div>
         </nav>
-        <section class="bg-light">
+        <section class="bg-white mb-5">
             <div class="p-3">
                 <div class="py-4">
-                    <h1 class="text-center">Build Valuable Product</h1>
-                    <h4 class="text-center">Explore</h4>
+                    <h1 class="text-center" style="font-size: 72px">Build Valuable Product</h1>
+                    <div class="text-center">
+                        <a class="text-decoration-none text-dark" href="#modern-business">Explore</a>
+                    </div>
                 </div>
-                <img src="{{ asset('storage/img/rocket.png') }}" alt="Foto" width="600" height="600" style="object-fit: contain; margin-top: -200px; margin-bottom: -300px; position: relative; z-index: 2;" class="mx-auto d-block">
-                <p class="text-center" style="font-size: 150px; position: relative; z-index: 1;">Nightive</p>
+                <img src="{{ asset('storage/img/rocket.png') }}" alt="Foto" width="512" height="512" style="object-fit: contain; margin-top: 0px; margin-bottom: -300px; position: relative; z-index: 2;" class="mx-auto d-block">
+                <div class="text-center" style="font-size: 300px; position: relative; z-index: 1; color: #808080">Nightive</div>
             </div>    
         </section>
         <section>
             <div class="mx-3 py-3">
             <div class="row mx-3 g-3 align-items-stretch pt-5" style="min-height: 300px">
-                <div class="col-lg-6 p-5">
-                    <div class="text-primary">MODERN BUSINESS</div>
-                    <div class="fw-bold" style="font-size: 60px">
-                        We spend one-third of our life at work.
+    
+        <!-- Kolom 1 -->
+        <div class="col-lg-6 p-5 d-flex">
+            <div class="d-flex flex-column justify-content-center w-100 h-100">
+                <div class="text-primary" id="modern-business">MODERN BUSINESS</div>
+                <div class="fw-bold" style="font-size: 48px;">
+                    We spend one-third of our life at work.
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="col-12 col-lg-3 d-flex">
+            <div class="bg-primary w-100 d-flex flex-column justify-content-between align-items-start p-5 rounded h-100">
+                <div>
+                    <img src="{{ asset('storage/img/photo.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
+                </div>
+                <div class="text-white" style="font-size: 22px">
+                    "Your site is always my only go to option for fragrances"
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="col-12 col-lg-3 d-flex">
+            <div class="w-100" style="background-color: #0c0e39; min-height: 100px; height: 100%;">
+                <div style="margin: 100px" class="d-flex  flex-column justify-content-center">
+                    <div class="d-flex col-lg-12">
+                        <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
+                        <div class="col-lg-6" style="background-color: #ffffff; min-height: 50px; height: 100%;"></div>
+                    </div>
+                    <div class="d-flex col-lg-12">
+                        <div class="col-lg-6" style="background-color: #0c0e39; min-height: 50px; height: 100%;"></div>
+                        <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
-                        <div class="bg-primary">
-                            <div class="d-flex flex-column justify-content-between align-items-start p-5 h-100">
-                                <div>
-                                    <img src="{{ asset('storage/img/photo.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
-                                </div>
-                                <div class="text-white" style="font-size: 22px">
-                                    "Your site is always my only go to option for fragrances"
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kolom 3 -->
-                    <div class="col-12 col-lg-3">
-                        <div style="background-color: #0c0e39; min-height: 100px;"></div>
-                    </div>
             </div>
+        </div>
+
+    </div>
+
             <br>
 
             <div class="row mx-3 g-3 align-items-stretch" style="min-height: 300px">
@@ -128,9 +149,9 @@
             </div>
 
         </section>
-        <section>
-            <h5 id="AboutUs" class="text-center">About Us</h5>
-            <div class="d-flex justify-content-center">
+        <section class="mt-5">
+            <h5 id="AboutUs" class="text-center text-primary" style="margin-bottom: 0px; margin-top: 128px">ABOUT US</h5>
+            <div class="d-flex justify-content-center" style="margin-bottom: 128px">
                 <div class="text-center col-md-11 px-3" style="font-size: 60px">
                     We are a creative team that believes that every design has a story,
                     <span class="text-secondary">
@@ -138,7 +159,7 @@
                     </span>
                 </div>
             </div>
-            <div class="row mx-3 g-3 align-items-stretch" style="min-height: 300px">
+            <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
                 <div class="col-lg-4">
                     <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
                         <div class="fw-bold text-center" style="font-size: 50px">
@@ -184,11 +205,11 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-between">
-                            <div class="fw-bold text-start" style="font-size: 64px">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                            <div class="fw-bold text-start" style="font-size: 48px">
                                 Illustration
                             </div>
-                            <div class="fw-bold text-start" style="font-size: 18px; color: #919191">
+                            <div class="text-start" style="font-size: 18px; color: #919191">
                                 Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
                             </div>
                         </div>
@@ -222,9 +243,9 @@
 
                     <!-- Kolom 2 -->
                     <div class="col-lg-5">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-start" style="font-size: 64px">Web Design</div>
-                        <div id="descText1" class="fw-bold text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
+                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
+                        <div id="descText1" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
                         Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
                         </div>
                     </div>
@@ -257,9 +278,9 @@
 
                     <!-- Kolom 2 -->
                     <div class="col-lg-5">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-start" style="font-size: 64px">Mobile App</div>
-                        <div id="descText2" class="fw-bold text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
+                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
+                        <div id="descText2" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
                         We build modern and responsive websites tailored to your brand's goals and user experience.
                         </div>
                     </div>
@@ -292,9 +313,9 @@
 
                     <!-- Kolom 2 -->
                     <div class="col-lg-5">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-start" style="font-size: 64px">Animation</div>
-                        <div id="descText3" class="fw-bold text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
+                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
+                        <div id="descText3" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
                         We build modern and responsive websites tailored to your brand's goals and user experience.
                         </div>
                     </div>
@@ -350,7 +371,7 @@
             <div class="mx-3 py-3">
                 <div class="row mx-3 g-3 align-items-stretch pt-5">
                     <div class="col-lg-12">
-                        <div class="text-primary">ABOUT US</div>
+                        <div class="text-primary" id="testimonials">TESTIMONIALS</div>
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="fw-bold" style="font-size: 42px">We are at the forefront of technological innovation.</div>
@@ -378,7 +399,7 @@
             
         </section>
         <section>
-            <div class="text-center">
+            <div class="text-center" style="margin-top: 128px;">
                 Our Product
             </div>
             <div class="row mx-3 g-3 align-items-stretch" style="min-height: 300px">
@@ -422,27 +443,56 @@
             </div>
         </section>
         <section>
-            <div class="text-center">
+            <div class="text-center" style="margin-top: 128px">
                 AWARDS
             </div>
-            <div>Achievements</div>
-            <div class="d-flex flex-column">
-                {{-- <div class="row">
-                    <div class="col-lg-5"><img src="" alt=""></div>
-                    <div class="col-lg-1">S/01</div>
-                    <div class="col-lg-5">Awwwards</div>
+        <div class="m-4" style="font-size: 48px">Achievements</div>
+        <div class="p-3">
+            <!-- Item 1 -->
+            <div class="row align-items-center mb-4 gx-3" style="min-height: 300px;">
+                <div class="col-lg-5">
+                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
                 </div>
-                <div class="row">
-                    <div class="col-lg-5"><img src="" alt=""></div>
-                    <div class="col-lg-1">S/01</div>
-                    <div class="col-lg-5">CSS Design Awards</div>
+                <div class="col-lg-1 text-center fw-bold">S/01</div>
+                <div class="col-lg-6">
+                    <div style="font-size: 36px;">Awwwards</div>
+                    <div>
+                        We pride ourselves on delivering visual solutions that are not only relevant but also make a real impact for brands.
+                        Our designs are dsigned to resonate, stand out, and deserve to recognized at Awwwards.
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5"><img src="" alt=""></div>
-                    <div class="col-lg-1">S/01</div>
-                    <div class="col-lg-5">Red Dot Design Award</div>
-                </div> --}}
             </div>
+
+            <!-- Item 2 -->
+            <div class="row align-items-center mb-4 gx-3" style="min-height: 300px;">
+                <div class="col-lg-5">
+                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
+                </div>
+                <div class="col-lg-1 text-center fw-bold">S/01</div>
+                <div class="col-lg-6">
+                    <div style="font-size: 36px;">CSS Design Awards</div>
+                    <div>
+                        Every element is designed with great detail to achieve visual perfection that aligns with the brand and user needs.
+                        We beieve design can create impact, and that's what we bring to every pixel.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="row align-items-center gx-3" style="min-height: 300px;">
+                <div class="col-lg-5">
+                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
+                </div>
+                <div class="col-lg-1 text-center fw-bold">S/01</div>
+                <div class="col-lg-6">
+                    <div style="font-size: 36px;">Red Dot Design Award</div>
+                    <div>
+                        Being recogniced at the Red Dot Design Award is a remarkable achievement that signifies the highest standards in innovation and aesthetics.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </section>
         <section>
             <div class="p-5" style="background: linear-gradient(135deg, #000000, #0000ac);">
@@ -456,9 +506,60 @@
                         <i class="fw-bold bi bi-envelope" style="font-size: 18px"></i> LET'S TALK
                     </button>
                 </div>
-
             </div>
-
+            <footer>
+                <div class="d-flex justify-content-between" style="margin-top: 64px; margin-bottom: 64px; margin-left: 128px; margin-right: 128px">
+                    <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
+                    <ul class="d-flex nav mb-2 mb-lg-0 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse w-100">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <!-- Logo di kiri -->
+            
+                            <!-- Menu di kanan -->
+                            {{-- <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
+                                </li>
+                            </ul> --}}
+                        </div>
+                    </div>
+            
+                    <!-- Tombol untuk tampilan mobile -->
+                    {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> --}}
+                </div>
+            </footer>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </body>
