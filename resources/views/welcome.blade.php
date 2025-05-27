@@ -23,6 +23,7 @@
                 font-family: 'Poppins', sans-serif;
             }
         </style>
+@include('css')
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-white bg-white" style="position: relative; z-index: 10;">
@@ -69,8 +70,13 @@
                         <a class="text-decoration-none text-dark" href="#modern-business">Explore</a>
                     </div>
                 </div>
-                <img src="{{ asset('storage/img/rocket.png') }}" alt="Foto" width="512" height="512" style="object-fit: contain; margin-top: 0px; margin-bottom: -300px; position: relative; z-index: 2;" class="mx-auto d-block">
-                <div class="text-center" style="font-size: 300px; position: relative; z-index: 1; color: #808080">Nightive</div>
+                <div style="max-width: 512px; width: 100%; margin: 0 auto; position: relative;">
+                    <img src="{{ asset('storage/img/rocket.png') }}"
+                        alt="Foto"
+                        style="width: 100%; height: auto; object-fit: contain; margin-top: 0; margin-bottom: -15vw; position: relative; z-index: 2;"
+                        class="mx-auto d-block">
+                    </div>
+                <div class="text-center" style="font-size: clamp(3rem, 20vw, 18.75rem); position: relative; z-index: 1; color: #808080;">Nightive</div>
             </div>    
         </section>
         <section>
@@ -160,30 +166,83 @@
                 </div>
             </div>
             <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
-                <div class="col-lg-4">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
-                        <div class="fw-bold text-center" style="font-size: 50px">
-                            Portofolio 1
+                <div class="row col-12">
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                img 1
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
-                        <div class="fw-bold text-center" style="font-size: 18px">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                My portofolio 1
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
-                        <div class="fw-bold text-center" style="font-size: 50px">
-                            Portofolio 2
+                <div class="row col-12">
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                My portofolio 2
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
-                        <div class="fw-bold text-center" style="font-size: 18px">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                img 2
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
-                        <div class="fw-bold text-center" style="font-size: 50px">
-                            Portofolio 3
+                <div class="row col-12">
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                img 3
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
-                        <div class="fw-bold text-center" style="font-size: 18px">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                My portofolio 3
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-12">
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                My portofolio 4
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                            <div class="fw-bold text-center" style="font-size: 50px">
+                                img 4
+                            </div>
+                            <div class="fw-bold text-center" style="font-size: 18px">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -194,150 +253,112 @@
                 Our Services
             </div>
             <div class="d-flex flex-column">
-                <div class="row mx-3 g-3 align-items-stretch" style="min-height: 200px">
-                    <div class="col-lg-1">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 18px">
-                                S/01
-                            </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                            <div class="fw-bold text-start" style="font-size: 48px">
-                                Illustration
-                            </div>
-                            <div class="text-start" style="font-size: 18px; color: #919191">
-                                Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 d-flex align-items-center justify-content-center py-4">
-                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                            <img src="{{ asset('storage/img/photo.jpg') }}" alt="Photo" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                            <img src="{{ asset('storage/img/photo.jpg') }}" alt="Photo" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                        <div class="col-lg-4 d-flex align-items-center justify-content-end">
-                            <img src="{{ asset('storage/img/photo.jpg') }}" alt="Photo" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="mx-4">
-            
-
-
-            <!-- BLOK 1: Animation -->
-            <div class="d-flex flex-column">
-                <div class="row mx-3 g-3 align-items-stretch">
-                    <!-- Kolom 1 -->
-                    <div class="col-lg-1">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-center" style="font-size: 18px">S/01</div>
-                    </div>
-                    </div>
-
-                    <!-- Kolom 2 -->
-                    <div class="col-lg-5">
+            <!-- BLOK 1: Illustration (Default Terbuka) -->
+            <div class="row mx-3 g-3 align-items-stretch">
+                <div class="col-lg-6">
                     <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
-                        <div id="descText1" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
-                        Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
+                        <div class="d-flex align-items-center gap-3">
+                            <button id="toggleBtn1" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                <i id="arrowIcon1" class="bi bi-chevron-up"></i>
+                            </button>
+                            <div class="fw-bold text-start" style="font-size: 48px">Illustration</div>
+                        </div>
+                        <div id="descText1" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191;">
+                            Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
                         </div>
                     </div>
-                    </div>
-
-                    <!-- Kolom 3 -->
-                    <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100">
-                        <img id="img1-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img1-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img1-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-
-                        <button id="seeMoreBtn1" class="btn btn-outline-dark">See More</button>
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
+                        <img id="img1-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
+                        <img id="img1-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
+                        <img id="img1-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
                     </div>
                 </div>
             </div>
 
             <hr class="mx-4">
 
-            <!-- BLOK 2: Web -->
-            <div class="d-flex flex-column">
-                <div class="row mx-3 g-3 align-items-stretch">
-                    <!-- Kolom 1 -->
-                    <div class="col-lg-1">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-center" style="font-size: 18px">S/02</div>
-                    </div>
-                    </div>
-
-                    <!-- Kolom 2 -->
-                    <div class="col-lg-5">
+            <!-- BLOK 2: Web Design -->
+            <div class="row mx-3 g-3 align-items-stretch">
+                <div class="col-lg-6">
                     <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
-                        <div id="descText2" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
-                        We build modern and responsive websites tailored to your brand's goals and user experience.
+                        <div class="d-flex align-items-center gap-3">
+                            <button id="toggleBtn2" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                <i id="arrowIcon2" class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
+                        </div>
+                        <div id="descText2" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            We build modern and responsive websites tailored to your brand's goals and user experience.
                         </div>
                     </div>
-                    </div>
-
-                    <!-- Kolom 3 -->
-                    <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100">
-                        <img id="img2-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img2-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img2-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-
-                        <button id="seeMoreBtn2" class="btn btn-outline-dark">See More</button>
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
+                        <img id="img2-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img2-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img2-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
                     </div>
                 </div>
             </div>
 
             <hr class="mx-4">
 
-            <!-- BLOK 3: Web -->
-            <div class="d-flex flex-column">
-                <div class="row mx-3 g-3 align-items-stretch">
-                    <!-- Kolom 1 -->
-                    <div class="col-lg-1">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                        <div class="fw-bold text-center" style="font-size: 18px">S/02</div>
-                    </div>
-                    </div>
-
-                    <!-- Kolom 2 -->
-                    <div class="col-lg-5">
+            <!-- BLOK 3: Animation -->
+            <div class="row mx-3 g-3 align-items-stretch">
+                <div class="col-lg-6">
                     <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
-                        <div id="descText3" class="text-start mt-3" style="font-size: 18px; color: #919191; display: none;">
-                        We build modern and responsive websites tailored to your brand's goals and user experience.
+                        <div class="d-flex align-items-center gap-3">
+                            <button id="toggleBtn3" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                <i id="arrowIcon3" class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
+                        </div>
+                        <div id="descText3" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            We deliver dynamic animations that bring your brand to life and enhance user engagement across platforms.
                         </div>
                     </div>
-                    </div>
-
-                    <!-- Kolom 3 -->
-                    <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100">
-                        <img id="img3-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img3-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img3-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-
-                        <button id="seeMoreBtn3" class="btn btn-outline-dark">See More</button>
-                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
+                        <img id="img3-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img3-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img3-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
                     </div>
                 </div>
             </div>
 
             <hr class="mx-4">
 
-            <!-- JAVASCRIPT -->
-            <script>
+            <!-- BLOK 4: Mobile App -->
+            <div class="row mx-3 g-3 align-items-stretch">
+                <div class="col-lg-6">
+                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="d-flex align-items-center gap-3">
+                            <button id="toggleBtn4" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                <i id="arrowIcon4" class="bi bi-chevron-down"></i>
+                            </button>
+                            <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
+                        </div>
+                        <div id="descText4" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            We develop cross-platform mobile applications that deliver performance, scalability, and a seamless user experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
+                        <img id="img4-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img4-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        <img id="img4-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mx-4">
+        @include('js')
+            {{-- <script>
             // Fungsi tombol untuk blok 1
             document.getElementById('seeMoreBtn1').addEventListener('click', function () {
                 document.getElementById('descText1').style.display = 'block';
@@ -364,7 +385,7 @@
                 document.getElementById('img3-3').style.display = 'block';
                 this.style.display = 'none';
             });
-            </script>
+            </script> --}}
 
         </section>
         <section>
