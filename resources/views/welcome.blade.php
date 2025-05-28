@@ -26,43 +26,42 @@
 @include('css')
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-white bg-white" style="position: relative; z-index: 10;">
-            <div class="container-fluid p-0"  style="margin-top: 16px; margin-bottom: 16px; margin-left: 128px; margin-right: 128px">
-                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <!-- Logo di kiri -->
-                        <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
-        
-                        <!-- Menu di kanan -->
-                        <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        
-                <!-- Tombol untuk tampilan mobile -->
+        <nav class="navbar navbar-expand-lg navbar-white bg-white nav-x-mg nav-y-mg" style="position: relative; z-index: 10;">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
+
+                <!-- Tombol toggle (harus sebelum collapse) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="bi bi-list" style="font-size: 24px;"></i>
+
                 </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Let's Talk</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <section class="bg-white mb-5">
+        <section class="bg-white mb-5 nav-x-mg">
             <div class="p-3">
                 <div class="py-4">
                     <h1 class="text-center" style="font-size: 72px">Build Valuable Product</h1>
@@ -70,21 +69,21 @@
                         <a class="text-decoration-none text-dark" href="#modern-business">Explore</a>
                     </div>
                 </div>
-                <div style="max-width: 512px; width: 100%; margin: 0 auto; position: relative;">
+                <div style="margin: 0 auto; position: relative;">
                     <img src="{{ asset('storage/img/rocket.png') }}"
                         alt="Foto"
-                        style="width: 100%; height: auto; object-fit: contain; margin-top: 0; margin-bottom: -15vw; position: relative; z-index: 2;"
+                        style="max-width: 512px; width: 50%; height: auto; object-fit: contain; margin-top: 0; margin-bottom: -15vw; position: relative; z-index: 2;"
                         class="mx-auto d-block">
                     </div>
                 <div class="text-center" style="font-size: clamp(3rem, 20vw, 18.75rem); position: relative; z-index: 1; color: #808080;">Nightive</div>
             </div>    
         </section>
-        <section>
+        <section class="nav-x-mg">
             <div class="mx-3 py-3">
             <div class="row mx-3 g-3 align-items-stretch pt-5" style="min-height: 300px">
     
         <!-- Kolom 1 -->
-        <div class="col-lg-6 p-5 d-flex">
+        <div class="col-lg-6 p-5 d-flex ">
             <div class="d-flex flex-column justify-content-center w-100 h-100">
                 <div class="text-primary" id="modern-business">MODERN BUSINESS</div>
                 <div class="fw-bold" style="font-size: 48px;">
@@ -97,7 +96,7 @@
         <div class="col-12 col-lg-3 d-flex">
             <div class="bg-primary w-100 d-flex flex-column justify-content-between align-items-start p-5 rounded h-100">
                 <div>
-                    <img src="{{ asset('storage/img/photo.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
+                    <img src="{{ asset('storage/img/profil.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
                 </div>
                 <div class="text-white" style="font-size: 22px">
                     "Your site is always my only go to option for fragrances"
@@ -134,7 +133,7 @@
 
                 <div class="col-lg-3">
                     <div class="p-4 h-100 d-flex justify-content-center align-items-center" style="background-color: #e0e3ea">
-                        <img src="{{ asset('storage/img/photo.jpg') }}" alt="photo" class="rounded-circle" width="200" height="200">
+                        <img src="{{ asset('storage/img/profil.jpg') }}" alt="photo" class="rounded-circle" width="200" height="200">
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -155,7 +154,7 @@
             </div>
 
         </section>
-        <section class="mt-5">
+        <section class="mt-5 nav-x-mg">
             <h5 id="AboutUs" class="text-center text-primary" style="margin-bottom: 0px; margin-top: 128px">ABOUT US</h5>
             <div class="d-flex justify-content-center" style="margin-bottom: 128px">
                 <div class="text-center col-md-11 px-3" style="font-size: 60px">
@@ -166,17 +165,17 @@
                 </div>
             </div>
             <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
-                <div class="row col-12">
-                    <div class="col-lg-6">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                <div class="row">
+                    <div class="col-lg-6 order-first order-md-first order-lg-first">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
-                                img 1
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
                             </div>
                             <div class="fw-bold text-center" style="font-size: 18px">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-last order-md-last order-lg-last">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
                                 My portofolio 1
@@ -186,8 +185,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row col-12">
-                    <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
                                 My portofolio 2
@@ -196,10 +195,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                    <div class="col-lg-6 order-first order-md-first order-lg-last">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
-                                img 2
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
                             </div>
                             <div class="fw-bold text-center" style="font-size: 18px">
                             </div>
@@ -207,16 +206,16 @@
                     </div>
                 </div>
                 <div class="row col-12">
-                    <div class="col-lg-6">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                    <div class="col-lg-6 order-first order-md-first order-lg-first">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
-                                img 3
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
                             </div>
                             <div class="fw-bold text-center" style="font-size: 18px">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-first order-md-first order-lg-first">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
                                 My portofolio 3
@@ -227,7 +226,7 @@
                     </div>
                 </div>
                 <div class="row col-12">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
                                 My portofolio 4
@@ -236,10 +235,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center" style="background-color: #e4ccff">
+                    <div class="col-lg-6 order-first order-md-first order-lg-last">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
                             <div class="fw-bold text-center" style="font-size: 50px">
-                                img 4
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
                             </div>
                             <div class="fw-bold text-center" style="font-size: 18px">
                             </div>
@@ -248,155 +247,133 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="text-center">
-                Our Services
-            </div>
-            <div class="d-flex flex-column">
+        <section class="nav-x-mg">
+            <div class="text-center">Our Services</div>
+            {{-- <div class="d-flex flex-column"> --}}
             <!-- BLOK 1: Illustration (Default Terbuka) -->
-            <div class="row mx-3 g-3 align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="d-flex align-items-center gap-3">
-                            <button id="toggleBtn1" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
-                                <i id="arrowIcon1" class="bi bi-chevron-up"></i>
-                            </button>
-                            <div class="fw-bold text-start" style="font-size: 48px">Illustration</div>
-                        </div>
-                        <div id="descText1" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191;">
-                            Our illustration services aim to deliver unique and characterful visuals, in line your brand identity from concept to final details.
+                <!-- HTML -->
+                <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
+                    <!-- Kiri: Teks -->
+                    <div class="col-lg-5">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                            <div class="d-flex align-items-center gap-3">
+                                <button id="toggleBtn1" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                    <i id="arrowIcon1" class="bi bi-chevron-up"></i>
+                                </button>
+                                <div class="fw-bold text-start" style="font-size: 48px">Illustration</div>
+                            </div>
+                            <div id="descText1" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191;">
+                                Our illustration services aim to deliver unique and characterful visuals, in line with your brand identity from concept to final details.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
-                        <img id="img1-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
-                        <img id="img1-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
-                        <img id="img1-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
-                    </div>
-                </div>
-            </div>
 
-            <hr class="mx-4">
-
-            <!-- BLOK 2: Web Design -->
-            <div class="row mx-3 g-3 align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="d-flex align-items-center gap-3">
-                            <button id="toggleBtn2" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
-                                <i id="arrowIcon2" class="bi bi-chevron-down"></i>
-                            </button>
-                            <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
-                        </div>
-                        <div id="descText2" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
-                            We build modern and responsive websites tailored to your brand's goals and user experience.
+                    <!-- Kanan: Gambar dengan Scroll Horizontal -->
+                    <div class="col-lg-6">
+                        <div class="image-scroll-wrapper justify-content-center img-group">
+                            <img id="img1-1" src="{{ asset('storage/img/il1.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
+                            <img id="img1-2" src="{{ asset('storage/img/il2.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
+                            <img id="img1-3" src="{{ asset('storage/img/il3.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover;">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
-                        <img id="img2-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img2-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img2-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                    </div>
-                </div>
-            </div>
 
-            <hr class="mx-4">
 
-            <!-- BLOK 3: Animation -->
-            <div class="row mx-3 g-3 align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="d-flex align-items-center gap-3">
-                            <button id="toggleBtn3" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
-                                <i id="arrowIcon3" class="bi bi-chevron-down"></i>
-                            </button>
-                            <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
-                        </div>
-                        <div id="descText3" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
-                            We deliver dynamic animations that bring your brand to life and enhance user engagement across platforms.
+                <hr class="mx-4">
+
+                <!-- BLOK 2: Web Design -->
+                <!-- BLOK 2: Web Design -->
+                <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                            <div class="d-flex align-items-center gap-3">
+                                <button id="toggleBtn2" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                    <i id="arrowIcon2" class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
+                            </div>
+                            <div id="descText2" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                                We build modern and responsive websites tailored to your brand's goals and user experience.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
-                        <img id="img3-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img3-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img3-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                    </div>
-                </div>
-            </div>
-
-            <hr class="mx-4">
-
-            <!-- BLOK 4: Mobile App -->
-            <div class="row mx-3 g-3 align-items-stretch">
-                <div class="col-lg-6">
-                    <div class="p-4 h-100 d-flex flex-column justify-content-start">
-                        <div class="d-flex align-items-center gap-3">
-                            <button id="toggleBtn4" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
-                                <i id="arrowIcon4" class="bi bi-chevron-down"></i>
-                            </button>
-                            <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
-                        </div>
-                        <div id="descText4" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
-                            We develop cross-platform mobile applications that deliver performance, scalability, and a seamless user experience.
+                    <div class="col-lg-6">
+                        <div class="image-scroll-wrapper justify-content-center img-group">
+                            <img id="img2-1" src="{{ asset('storage/img/web1.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img2-2" src="{{ asset('storage/img/web2.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img2-3" src="{{ asset('storage/img/web3.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="d-flex justify-content-end align-items-center gap-3 h-100 img-group">
-                        <img id="img4-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img4-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
-                        <img id="img4-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+
+
+                <hr class="mx-4">
+
+                <!-- BLOK 3: Animation -->
+                <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                            <div class="d-flex align-items-center gap-3">
+                                <button id="toggleBtn3" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                    <i id="arrowIcon3" class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
+                            </div>
+                            <div id="descText3" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                                We deliver dynamic animations that bring your brand to life and enhance user engagement across platforms.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-scroll-wrapper justify-content-center img-group">
+                            <img id="img3-1" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img3-2" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img3-3" src="{{ asset('storage/img/photo.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <hr class="mx-4">
-        @include('js')
-            {{-- <script>
-            // Fungsi tombol untuk blok 1
-            document.getElementById('seeMoreBtn1').addEventListener('click', function () {
-                document.getElementById('descText1').style.display = 'block';
-                document.getElementById('img1-1').style.display = 'block';
-                document.getElementById('img1-2').style.display = 'block';
-                document.getElementById('img1-3').style.display = 'block';
-                this.style.display = 'none';
-            });
+                <hr class="mx-4">
 
-            // Fungsi tombol untuk blok 2
-            document.getElementById('seeMoreBtn2').addEventListener('click', function () {
-                document.getElementById('descText2').style.display = 'block';
-                document.getElementById('img2-1').style.display = 'block';
-                document.getElementById('img2-2').style.display = 'block';
-                document.getElementById('img2-3').style.display = 'block';
-                this.style.display = 'none';
-            });
-
-            // Fungsi tombol untuk blok 3
-            document.getElementById('seeMoreBtn3').addEventListener('click', function () {
-                document.getElementById('descText3').style.display = 'block';
-                document.getElementById('img3-1').style.display = 'block';
-                document.getElementById('img3-2').style.display = 'block';
-                document.getElementById('img3-3').style.display = 'block';
-                this.style.display = 'none';
-            });
-            </script> --}}
-
+                <!-- BLOK 4: Mobile App -->
+                <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
+                    <div class="col-xl-5">
+                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                            <div class="d-flex align-items-center gap-3">
+                                <button id="toggleBtn4" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
+                                    <i id="arrowIcon4" class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
+                            </div>
+                            <div id="descText4" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                                We develop cross-platform mobile applications that deliver performance, scalability, and a seamless user experience.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="image-scroll-wrapper justify-content-center img-group">
+                            <img id="img4-1" src="{{ asset('storage/img/mob1.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img4-2" src="{{ asset('storage/img/mob2.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                            <img id="img4-3" src="{{ asset('storage/img/mob3.jpg') }}" class="img-fluid rounded toggle-content" style="width: 200px; height: 200px; object-fit: cover; display: none;">
+                        </div>
+                    </div>
+                </div>
+                <hr class="mx-4">
+            {{-- </div> --}}
         </section>
-        <section>
+        <section class="nav-x-mg">
             <div class="mx-3 py-3">
                 <div class="row mx-3 g-3 align-items-stretch pt-5">
                     <div class="col-lg-12">
                         <div class="text-primary" id="testimonials">TESTIMONIALS</div>
                         <div class="row">
                             <div class="col-lg-7">
-                                <div class="fw-bold" style="font-size: 42px">We are at the forefront of technological innovation.</div>
-                                <div class="col-7">Our Journey began over a decade ago, driven by a passion for delivering cutting-edge solutions to businesses worldwide.</div>
+                                <div class="fw-bold" style="font-size: 42px">
+                                    We are at the forefront of technological innovation.
+                                </div>
+                                <div class="col-7">
+                                    Our Journey began over a decade ago, driven by a passion for delivering cutting-edge solutions to businesses worldwide.
+                                </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-3">
@@ -410,16 +387,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <img src="{{ asset('storage/img/photo.jpg') }}" alt="">
+                                <!-- Gambar dengan rasio 1:1 -->
+                                <div class="ratio ratio-1x1" style="max-width: 400px; margin: auto;">
+                                    <img src="{{ asset('storage/img/testimonial.jpg') }}" class="rounded img-fluid" alt="Testimonial">
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
             
             
         </section>
-        <section>
+        <section class="nav-x-mg">
             <div class="text-center" style="margin-top: 128px;">
                 Our Product
             </div>
@@ -463,60 +444,75 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="nav-x-mg">
             <div class="text-center" style="margin-top: 128px">
                 AWARDS
             </div>
-        <div class="m-4" style="font-size: 48px">Achievements</div>
-        <div class="p-3">
-            <!-- Item 1 -->
-            <div class="row align-items-center mb-4 gx-3" style="min-height: 300px;">
-                <div class="col-lg-5">
-                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
-                </div>
-                <div class="col-lg-1 text-center fw-bold">S/01</div>
-                <div class="col-lg-6">
-                    <div style="font-size: 36px;">Awwwards</div>
-                    <div>
-                        We pride ourselves on delivering visual solutions that are not only relevant but also make a real impact for brands.
-                        Our designs are dsigned to resonate, stand out, and deserve to recognized at Awwwards.
+            <div class="m-4" style="font-size: 48px">Achievements</div>
+            <div class="p-3">
+                <!-- Item 1 -->
+                <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
+                    <div class="col-lg-6">
+                        <img src="{{ asset('storage/img/awwward.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    </div>
+                    <div class="row col-lg-6 align-content-between">
+                        <div>
+                            <div style="font-size: 36px;">Awwwards</div>
+                            <div class="my-3">
+                                We pride ourselves on delivering visual solutions that are not only relevant but also make a real impact for brands.
+                                Our designs are dsigned to resonate, stand out, and deserve to recognized at Awwwards.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <hr>
 
-            <!-- Item 2 -->
-            <div class="row align-items-center mb-4 gx-3" style="min-height: 300px;">
-                <div class="col-lg-5">
-                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
-                </div>
-                <div class="col-lg-1 text-center fw-bold">S/01</div>
-                <div class="col-lg-6">
-                    <div style="font-size: 36px;">CSS Design Awards</div>
-                    <div>
-                        Every element is designed with great detail to achieve visual perfection that aligns with the brand and user needs.
-                        We beieve design can create impact, and that's what we bring to every pixel.
+                <!-- Item 2 -->
+                <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
+                    <div class="col-lg-6">
+                        <img src="{{ asset('storage/img/cssaw.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    </div>
+                    <div class="row col-lg-6 align-content-between">
+                        <div>
+                            <div style="font-size: 36px;">CSS Design Awards</div>
+                            <div class="my-3">
+                                Every element is designed with great detail to achieve visual perfection that aligns with the brand and user needs.
+                                We beieve design can create impact, and that's what we bring to every pixel.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">more</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <hr>
 
-            <!-- Item 3 -->
-            <div class="row align-items-center gx-3" style="min-height: 300px;">
-                <div class="col-lg-5">
-                    <img src="{{ asset('storage/img/award.png') }}" alt="" class="img-fluid" style="height: 200px; width: 100%; object-fit: contain;">
-                </div>
-                <div class="col-lg-1 text-center fw-bold">S/01</div>
-                <div class="col-lg-6">
-                    <div style="font-size: 36px;">Red Dot Design Award</div>
-                    <div>
-                        Being recogniced at the Red Dot Design Award is a remarkable achievement that signifies the highest standards in innovation and aesthetics.
+                <!-- Item 3 -->
+                <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
+                    <div class="col-lg-6">
+                        <img src="{{ asset('storage/img/reddotaw.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    </div>
+                    <div class="row col-lg-6 align-content-between">
+                        <div>
+                            <div style="font-size: 36px;">Red Dot Design Award</div>
+                            <div class="my-3">
+                                Being recogniced at the Red Dot Design Award is a remarkable achievement that signifies the highest standards in innovation and aesthetics.
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">more</button>
+                        </div>
                     </div>
                 </div>
+                <hr>
             </div>
-        </div>
 
         </section>
         <section>
-            <div class="p-5" style="background: linear-gradient(135deg, #000000, #0000ac);">
+            <div class="p-x-mg py-5" style="background: linear-gradient(135deg, #000000, #0000ac);">
                 <div class="m-3" style="font-size: 64px">
                     <div class="text-center text-white">Let's Collaborate and Create</div>
                     <div class="text-center text-white">Something Amazing!</div>
@@ -529,7 +525,7 @@
                 </div>
             </div>
             <footer>
-                <div class="d-flex justify-content-between" style="margin-top: 64px; margin-bottom: 64px; margin-left: 128px; margin-right: 128px">
+                <div class="d-flex justify-content-between nav-x-mg" style="margin-top: 64px; margin-bottom: 64px;">
                     <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
                     <ul class="d-flex nav mb-2 mb-lg-0 gap-5">
                         <li class="nav-item">
@@ -548,40 +544,10 @@
                             <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
                         </li>
                     </ul>
-                    <div class="collapse navbar-collapse w-100">
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <!-- Logo di kiri -->
-            
-                            <!-- Menu di kanan -->
-                            {{-- <ul class="navbar-nav mb-2 mb-lg-0 gap-5">
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
-                                </li>
-                            </ul> --}}
-                        </div>
-                    </div>
-            
-                    <!-- Tombol untuk tampilan mobile -->
-                    {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> --}}
                 </div>
             </footer>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+        @include('js')
     </body>
 </html>
