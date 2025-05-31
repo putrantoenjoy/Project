@@ -27,7 +27,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-white bg-white nav-x-mg nav-y-mg" style="position: relative; z-index: 10;">
-            <div class="container-fluid">
+            <div class="container-fluid text-center">
                 <!-- Logo -->
                 <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
 
@@ -64,7 +64,7 @@
         <section class="bg-white mb-5 nav-x-mg">
             <div class="p-3">
                 <div class="py-4">
-                    <h1 class="text-center" style="font-size: 72px">Build Valuable Product</h1>
+                    <h1 class="text-center page-font-res">Build Valuable Product</h1>
                     <div class="text-center">
                         <a class="text-decoration-none text-dark" href="#modern-business">Explore</a>
                     </div>
@@ -165,82 +165,102 @@
                 </div>
             </div>
             <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
-                <div class="row">
+                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                    <!-- Kolom Gambar -->
                     <div class="col-lg-6 order-first order-md-first order-lg-first">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
-                            </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                        <div class="d-flex justify-content-center">
+                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
                             </div>
                         </div>
                     </div>
+
+                    <!-- Kolom Teks -->
                     <div class="col-lg-6 order-last order-md-last order-lg-last">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                My portofolio 1
+                            <div class="mb-3">
+                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                            <div class="mb-3">
+                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                            </div>
+                            <div style="font-size: 18px">
+                                Industry-leading encryption and non-custodial storage ensure your assets are safe.
+                                Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row d-flex flex-column flex-lg-row align-items-center">
                     <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                My portofolio 2
+                            <div class="mb-3">
+                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                            <div class="mb-3">
+                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                            </div>
+                            <div style="font-size: 18px">
+                                Industry-leading encryption and non-custodial storage ensure your assets are safe.
+                                Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 order-first order-md-first order-lg-last">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
-                            </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                        <div class="d-flex justify-content-center">
+                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row col-12">
+                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                    <!-- Kolom Gambar -->
                     <div class="col-lg-6 order-first order-md-first order-lg-first">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
-                            </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                        <div class="d-flex justify-content-center">
+                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-first order-md-first order-lg-first">
+
+                    <!-- Kolom Teks -->
+                    <div class="col-lg-6 order-last order-md-last order-lg-last">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                My portofolio 3
+                            <div class="mb-3">
+                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                            <div class="mb-3">
+                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                            </div>
+                            <div style="font-size: 18px">
+                                Industry-leading encryption and non-custodial storage ensure your assets are safe.
+                                Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row col-12">
+
+                <div class="row d-flex flex-column flex-lg-row align-items-center">
                     <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
                         <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                My portofolio 4
+                            <div class="mb-3">
+                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                            <div class="mb-3">
+                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                            </div>
+                            <div style="font-size: 18px">
+                                Industry-leading encryption and non-custodial storage ensure your assets are safe.
+                                Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 order-first order-md-first order-lg-last">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
-                            <div class="fw-bold text-center" style="font-size: 50px">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="rounded" width="400" height="400" alt="">
-                            </div>
-                            <div class="fw-bold text-center" style="font-size: 18px">
+                        <div class="d-flex justify-content-center">
+                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
+                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -260,7 +280,7 @@
                                 <button id="toggleBtn1" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon1" class="bi bi-chevron-up"></i>
                                 </button>
-                                <div class="fw-bold text-start" style="font-size: 48px">Illustration</div>
+                                <div class="fw-bold text-start tittle-font-res">Illustration</div>
                             </div>
                             <div id="descText1" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191;">
                                 Our illustration services aim to deliver unique and characterful visuals, in line with your brand identity from concept to final details.
@@ -290,7 +310,7 @@
                                 <button id="toggleBtn2" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon2" class="bi bi-chevron-down"></i>
                                 </button>
-                                <div class="fw-bold text-start" style="font-size: 48px">Web Design</div>
+                                <div class="fw-bold text-start tittle-font-res">Web Design</div>
                             </div>
                             <div id="descText2" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
                                 We build modern and responsive websites tailored to your brand's goals and user experience.
@@ -317,7 +337,7 @@
                                 <button id="toggleBtn3" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon3" class="bi bi-chevron-down"></i>
                                 </button>
-                                <div class="fw-bold text-start" style="font-size: 48px">Animation</div>
+                                <div class="fw-bold text-start tittle-font-res">Animation</div>
                             </div>
                             <div id="descText3" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
                                 We deliver dynamic animations that bring your brand to life and enhance user engagement across platforms.
@@ -343,7 +363,7 @@
                                 <button id="toggleBtn4" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon4" class="bi bi-chevron-down"></i>
                                 </button>
-                                <div class="fw-bold text-start" style="font-size: 48px">Mobile App</div>
+                                <div class="fw-bold text-start tittle-font-res">Mobile App</div>
                             </div>
                             <div id="descText4" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
                                 We develop cross-platform mobile applications that deliver performance, scalability, and a seamless user experience.
@@ -368,7 +388,7 @@
                         <div class="text-primary" id="testimonials">TESTIMONIALS</div>
                         <div class="row">
                             <div class="col-lg-7">
-                                <div class="fw-bold" style="font-size: 42px">
+                                <div class="fw-bold tittle-font-res">
                                     We are at the forefront of technological innovation.
                                 </div>
                                 <div class="col-7">
@@ -449,7 +469,7 @@
                 AWARDS
             </div>
             <div class="m-4" style="font-size: 48px">Achievements</div>
-            <div class="p-3">
+            <div class="p-3 mb-3">
                 <!-- Item 1 -->
                 <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
                     <div class="col-lg-6">
@@ -464,7 +484,7 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn-primary">more</button>
+                            <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
                 </div>
@@ -484,7 +504,7 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn-primary">more</button>
+                            <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
                 </div>
@@ -503,7 +523,7 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn-primary">more</button>
+                            <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
                 </div>
@@ -514,8 +534,8 @@
         <section>
             <div class="p-x-mg py-5" style="background: linear-gradient(135deg, #000000, #0000ac);">
                 <div class="m-3" style="font-size: 64px">
-                    <div class="text-center text-white">Let's Collaborate and Create</div>
-                    <div class="text-center text-white">Something Amazing!</div>
+                    <div class="text-center text-white page-font-res">Let's Collaborate and Create</div>
+                    <div class="text-center text-white page-font-res">Something Amazing!</div>
                 </div>
                 <div class="text-center text-white">Join us in transforming your project from concept to completion</div>
                 <div class="d-flex justify-content-center align-items-center m-3" style="height: 100px;">

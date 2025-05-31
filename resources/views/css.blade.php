@@ -23,22 +23,14 @@
     margin-bottom: 16px;
   }
 
-@media (min-width: 992px) {
-  .nav-x-mg {
-    margin-left: 128px;
-    margin-right: 128px;
-  }
-  .p-x-mg {
-    padding-left: 128px;
-    padding-right: 128px;
-  }
 
-  .nav-y-mg {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
+.btn-more {
+    
+    border: 2px, solid;
+    border-color: #000000;
+    border-radius: 24px;
+
 }
-
 .porto-radius {
     border-radius: 32px;
 }
@@ -60,8 +52,54 @@
     background-color: #ccc;
     border-radius: 4px;
 }
+/* phone */
+  @media (min-width: 576px) {
+    .page-font-res {
+      font-size: 32px;
+    }
+    .tittle-font-res {
+      font-size: 24x;
+    }
+    .desc-font-res{
 
+    }
+  }
+  /* tablet */
+  @media (min-width: 768px) {
+    .page-font-res {
+      font-size: 48px;
+    }
+    .tittle-font-res {
+      font-size: 32px;
+    }
+    .desc-font-res{
 
+    }
+  }
+  /* laptop */
+  @media (min-width: 992px) {
+    .nav-x-mg {
+      margin-left: 128px;
+      margin-right: 128px;
+    }
+    .p-x-mg {
+      padding-left: 128px;
+      padding-right: 128px;
+    }
+  
+    .page-font-res {
+      font-size: 72px;
+    }
+    .tittle-font-res {
+      font-size: 48px;
+    }
+    .desc-font-res{
 
+    }
+    .nav-y-mg {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
 </style>
 
