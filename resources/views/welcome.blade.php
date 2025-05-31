@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
-                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
                     <!-- Kolom Gambar -->
                     <div class="col-lg-6 order-first order-md-first order-lg-first">
                         <div class="d-flex justify-content-center">
@@ -177,7 +177,7 @@
 
                     <!-- Kolom Teks -->
                     <div class="col-lg-6 order-last order-md-last order-lg-last">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
                                 <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
@@ -192,9 +192,9 @@
                     </div>
                 </div>
 
-                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
                     <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
                                 <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
                     <!-- Kolom Gambar -->
                     <div class="col-lg-6 order-first order-md-first order-lg-first">
                         <div class="d-flex justify-content-center">
@@ -227,7 +227,7 @@
 
                     <!-- Kolom Teks -->
                     <div class="col-lg-6 order-last order-md-last order-lg-last">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
                                 <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
@@ -242,9 +242,9 @@
                     </div>
                 </div>
 
-                <div class="row d-flex flex-column flex-lg-row align-items-center">
+                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
                     <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-center">
+                        <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
                                 <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
@@ -275,14 +275,14 @@
                 <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
                     <!-- Kiri: Teks -->
                     <div class="col-lg-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="py-4 h-100 d-flex flex-column justify-content-start">
                             <div class="d-flex align-items-center gap-3">
                                 <button id="toggleBtn1" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon1" class="bi bi-chevron-up"></i>
                                 </button>
                                 <div class="fw-bold text-start tittle-font-res">Illustration</div>
                             </div>
-                            <div id="descText1" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191;">
+                            <div id="descText1" class="desc-text text-start mt-3 toggle-content desc-font-res" style="color: #919191;">
                                 Our illustration services aim to deliver unique and characterful visuals, in line with your brand identity from concept to final details.
                             </div>
                         </div>
@@ -305,14 +305,14 @@
                 <!-- BLOK 2: Web Design -->
                 <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
                     <div class="col-lg-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="py-4 h-100 d-flex flex-column justify-content-start">
                             <div class="d-flex align-items-center gap-3">
                                 <button id="toggleBtn2" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon2" class="bi bi-chevron-down"></i>
                                 </button>
                                 <div class="fw-bold text-start tittle-font-res">Web Design</div>
                             </div>
-                            <div id="descText2" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            <div id="descText2" class="desc-text text-start mt-3 toggle-content desc-font-res" style="color: #919191; display: none;">
                                 We build modern and responsive websites tailored to your brand's goals and user experience.
                             </div>
                         </div>
@@ -332,14 +332,14 @@
                 <!-- BLOK 3: Animation -->
                 <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
                     <div class="col-lg-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="py-4 h-100 d-flex flex-column justify-content-start">
                             <div class="d-flex align-items-center gap-3">
                                 <button id="toggleBtn3" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon3" class="bi bi-chevron-down"></i>
                                 </button>
                                 <div class="fw-bold text-start tittle-font-res">Animation</div>
                             </div>
-                            <div id="descText3" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            <div id="descText3" class="desc-text text-start mt-3 toggle-content desc-font-res" style="color: #919191; display: none;">
                                 We deliver dynamic animations that bring your brand to life and enhance user engagement across platforms.
                             </div>
                         </div>
@@ -358,14 +358,14 @@
                 <!-- BLOK 4: Mobile App -->
                 <div class="row row-cols-lg-2 mx-3 g-3 align-items-stretch justify-content-between">
                     <div class="col-xl-5">
-                        <div class="p-4 h-100 d-flex flex-column justify-content-start">
+                        <div class="py-4 h-100 d-flex flex-column justify-content-start">
                             <div class="d-flex align-items-center gap-3">
                                 <button id="toggleBtn4" class="btn btn-outline-dark p-1" style="width: 40px; height: 40px;">
                                     <i id="arrowIcon4" class="bi bi-chevron-down"></i>
                                 </button>
                                 <div class="fw-bold text-start tittle-font-res">Mobile App</div>
                             </div>
-                            <div id="descText4" class="desc-text text-start mt-3 toggle-content" style="font-size: 18px; color: #919191; display: none;">
+                            <div id="descText4" class="desc-text text-start mt-3 toggle-content desc-font-res" style="color: #919191; display: none;">
                                 We develop cross-platform mobile applications that deliver performance, scalability, and a seamless user experience.
                             </div>
                         </div>
@@ -391,18 +391,18 @@
                                 <div class="fw-bold tittle-font-res">
                                     We are at the forefront of technological innovation.
                                 </div>
-                                <div class="col-7">
+                                <div class="col-7 desc-font-res">
                                     Our Journey began over a decade ago, driven by a passion for delivering cutting-edge solutions to businesses worldwide.
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-3">
-                                        <strong style="font-size: 42px">15+</strong>
-                                        <div>Years Of Experience</div>
+                                        <strong class="tittle-font-res">15+</strong>
+                                        <div class="desc-font-res">Years Of Experience</div>
                                     </div>
                                     <div class="col-3">
-                                        <strong style="font-size: 42px">5000+</strong>
-                                        <div>Satisfied Clients</div>
+                                        <strong class="tittle-font-res">5000+</strong>
+                                        <div class="desc-font-res">Satisfied Clients</div>
                                     </div>
                                 </div>
                             </div>
@@ -533,37 +533,41 @@
         </section>
         <section>
             <div class="p-x-mg py-5" style="background: linear-gradient(135deg, #000000, #0000ac);">
-                <div class="m-3" style="font-size: 64px">
-                    <div class="text-center text-white page-font-res">Let's Collaborate and Create</div>
-                    <div class="text-center text-white page-font-res">Something Amazing!</div>
+                <div class="m-3">
+                    <div class="text-center text-white footer-tittle-res">Let's Collaborate and Create</div>
+                    <div class="text-center text-white footer-tittle-res">Something Amazing!</div>
                 </div>
-                <div class="text-center text-white">Join us in transforming your project from concept to completion</div>
+                <div class="text-center text-white desc-font-res">Join us in transforming your project from concept to completion</div>
                 <div class="d-flex justify-content-center align-items-center m-3" style="height: 100px;">
                     <button class="btn btn-light rounded-pill fw-bold px-4" style="font-size: 14px">
                         <i class="fw-bold bi bi-envelope" style="font-size: 18px"></i> LET'S TALK
                     </button>
                 </div>
             </div>
-            <footer>
-                <div class="d-flex justify-content-between nav-x-mg" style="margin-top: 64px; margin-bottom: 64px;">
-                    <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
-                    <ul class="d-flex nav mb-2 mb-lg-0 gap-5">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style="font-size: 14px" href="#AboutUs">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Portofolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Expertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style="font-size: 14px" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" style="font-size: 14px" href="#">Lets Talk</a>
-                        </li>
-                    </ul>
+            <footer class="">
+                <div class="footer-res nav-x-mg" style="margin-top: 64px; margin-bottom: 64px;">
+                    <div class="col-lg-auto footer-img-res">
+                        <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
+                    </div>
+                    <div class="col-lg-auto p-0">
+                        <ul class="footer-a-res d-flex nav mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-2" style="font-size: 14px" href="#AboutUs">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-2" style="font-size: 14px" href="#">Portofolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-2" style="font-size: 14px" href="#">Expertise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-2" style="font-size: 14px" href="#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark px-2" style="font-size: 14px" href="#">Lets Talk</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </footer>
         </section>

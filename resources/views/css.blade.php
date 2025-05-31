@@ -52,6 +52,34 @@
     background-color: #ccc;
     border-radius: 4px;
 }
+
+.footer-tittle-res {
+  font-size: clamp(36px, 5vw, 72px);
+}
+
+/* other */
+@media (min-width: 0px) {
+  .page-font-res {
+    font-size: 32px;
+  }
+  .tittle-font-res {
+    font-size: 24x;
+  }
+  .desc-font-res{
+    font-size: 12px;
+  }
+  .footer-a-res {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-img-res {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      justify-content: center;
+    }
+}
 /* phone */
   @media (min-width: 576px) {
     .page-font-res {
@@ -61,7 +89,23 @@
       font-size: 24x;
     }
     .desc-font-res{
-
+      font-size: 12px;
+    }
+    .footer-res {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; */
+    }
+    .footer-a-res {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer-img-res {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      justify-content: center;
     }
   }
   /* tablet */
@@ -73,7 +117,23 @@
       font-size: 32px;
     }
     .desc-font-res{
-
+      font-size: 14px;
+    }
+    .footer-res {
+      /* display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; */
+    }
+    .footer-a-res {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    .footer-img-res {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      justify-content: center;
     }
   }
   /* laptop */
@@ -94,11 +154,29 @@
       font-size: 48px;
     }
     .desc-font-res{
-
+      font-size: 16px;
     }
     .nav-y-mg {
       margin-top: 16px;
       margin-bottom: 16px;
+    }
+    
+    .footer-res {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .footer-a-res {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: end;
+    }
+    .footer-img-res {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 0rem;
+      justify-content: center;
     }
   }
 </style>
