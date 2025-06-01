@@ -26,7 +26,7 @@
 @include('css')
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-white bg-white nav-x-mg nav-y-mg" style="position: relative; z-index: 10;">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white nav-x-mg nav-y-mg p-0" style="position: relative; z-index: 10;">
             <div class="container-fluid text-center">
                 <!-- Logo -->
                 <img src="{{ asset('storage/img/vector.png') }}" alt="Foto" width="50" height="50" style="object-fit: contain">
@@ -62,8 +62,8 @@
             </div>
         </nav>
         <section class="bg-white mb-5 nav-x-mg">
-            <div class="p-3">
-                <div class="py-4">
+            <div>
+                <div class="py-5">
                     <h1 class="text-center page-font-res">Build Valuable Product</h1>
                     <div class="text-center">
                         <a class="text-decoration-none text-dark" href="#modern-business">Explore</a>
@@ -78,53 +78,50 @@
                 <div class="text-center" style="font-size: clamp(3rem, 20vw, 18.75rem); position: relative; z-index: 1; color: #808080;">Nightive</div>
             </div>    
         </section>
-        <section class="nav-x-mg">
-            <div class="mx-3 py-3">
-            <div class="row mx-3 g-3 align-items-stretch pt-5" style="min-height: 300px">
-    
-        <!-- Kolom 1 -->
-        <div class="col-lg-6 p-5 d-flex ">
-            <div class="d-flex flex-column justify-content-center w-100 h-100">
-                <div class="text-primary" id="modern-business">MODERN BUSINESS</div>
-                <div class="fw-bold" style="font-size: 48px;">
-                    We spend one-third of our life at work.
-                </div>
-            </div>
-        </div>
-
-        <!-- Kolom 2 -->
-        <div class="col-12 col-lg-3 d-flex">
-            <div class="bg-primary w-100 d-flex flex-column justify-content-between align-items-start p-5 rounded h-100">
-                <div>
-                    <img src="{{ asset('storage/img/profil.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
-                </div>
-                <div class="text-white" style="font-size: 22px">
-                    "Your site is always my only go to option for fragrances"
-                </div>
-            </div>
-        </div>
-
-        <!-- Kolom 3 -->
-        <div class="col-12 col-lg-3 d-flex">
-            <div class="w-100" style="background-color: #0c0e39; min-height: 100px; height: 100%;">
-                <div style="margin: 100px" class="d-flex  flex-column justify-content-center">
-                    <div class="d-flex col-lg-12">
-                        <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
-                        <div class="col-lg-6" style="background-color: #ffffff; min-height: 50px; height: 100%;"></div>
+        <section class="nav-x-mg" style="margin-bottom: 128px; margin-top: 128px;">
+            <div class="">
+                <div class="row g-3 align-items-stretch" style="min-height: 300px">
+                    <!-- Kolom 1 -->
+                    <div class="col-lg-6 p-5 d-flex ">
+                        <div class="d-flex flex-column justify-content-center w-100 h-100">
+                            <div class="text-primary" id="modern-business">MODERN BUSINESS</div>
+                            <div class="fw-bold" style="font-size: 48px;">
+                                We spend one-third of our life at work.
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex col-lg-12">
-                        <div class="col-lg-6" style="background-color: #0c0e39; min-height: 50px; height: 100%;"></div>
-                        <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
+
+                    <!-- Kolom 2 -->
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="bg-primary w-100 d-flex flex-column justify-content-between align-items-start p-5 rounded h-100">
+                            <div>
+                                <img src="{{ asset('storage/img/profil.jpg') }}" alt="photo" class="rounded-circle" width="80" height="80">
+                            </div>
+                            <div class="text-white" style="font-size: 22px">
+                                "Your site is always my only go to option for fragrances"
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 3 -->
+                    <div class="col-12 col-lg-3 d-flex">
+                        <div class="w-100" style="background-color: #0c0e39; min-height: 100px; height: 100%;">
+                            <div style="margin: 100px" class="d-flex  flex-column justify-content-center">
+                                <div class="d-flex col-lg-12">
+                                    <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
+                                    <div class="col-lg-6" style="background-color: #ffffff; min-height: 50px; height: 100%;"></div>
+                                </div>
+                                <div class="d-flex col-lg-12">
+                                    <div class="col-lg-6" style="background-color: #0c0e39; min-height: 50px; height: 100%;"></div>
+                                    <div class="col-lg-6" style="background-color: #2848f8; min-height: 50px; height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
             <br>
-
-            <div class="row mx-3 g-3 align-items-stretch" style="min-height: 300px">
+            <div class="row g-3 align-items-stretch" style="min-height: 300px">
                 <div class="col-lg-3">
                     <div class="bg-primary text-white p-0 h-100">
                         <img src="{{ asset('storage/img/geo.jpeg') }}" alt="" class="w-100 h-100" style="object-fit: cover;">
@@ -155,7 +152,7 @@
 
         </section>
         <section class="mt-5 nav-x-mg">
-            <h5 id="AboutUs" class="text-center text-primary" style="margin-bottom: 0px; margin-top: 128px">ABOUT US</h5>
+            <h5 id="AboutUs" class="text-center text-primary" style="margin-bottom: 0px;">ABOUT US</h5>
             <div class="d-flex justify-content-center" style="margin-bottom: 128px">
                 <div class="text-center col-md-11 px-3" style="font-size: 60px">
                     We are a creative team that believes that every design has a story,
@@ -164,27 +161,25 @@
                     </span>
                 </div>
             </div>
-            <div class="row mx-3 my-5 g-3 align-items-stretch" style="min-height: 300px">
-                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
+            <div class="row mx-3 g-3 align-items-stretch justify-content-center" style="min-height: 600px">
+                <div class="my-5 row d-flex flex-column flex-lg-row align-items-center px-0">
                     <!-- Kolom Gambar -->
-                    <div class="col-lg-6 order-first order-md-first order-lg-first">
-                        <div class="d-flex justify-content-center">
-                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
-                            </div>
+                    <div class="col-lg-7 d-flex justify-content-center px-0 order-first order-md-first order-lg-first">
+                        <div style="max-width: 550px; width: 100%;">
+                            <img src="{{ asset('storage/img/img.jpg') }}" alt="Image" class="br-radius-res" style="width: 100%; aspect-ratio: 11 / 12; object-fit: cover;">
                         </div>
                     </div>
 
                     <!-- Kolom Teks -->
-                    <div class="col-lg-6 order-last order-md-last order-lg-last">
+                    <div class="col-lg-5 order-last order-md-last order-lg-last box-p-res">
                         <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
-                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
+                                <button class="btn btn-white px-3 desc-font-res" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
                             <div class="mb-3">
-                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                                <div class="fw-bold tittle-font-res">Secure & Private</div>
                             </div>
-                            <div style="font-size: 18px">
+                            <div class="desc-font-res">
                                 Industry-leading encryption and non-custodial storage ensure your assets are safe.
                                 Face ID & fingerprint authentication for extra protection.
                             </div>
@@ -192,49 +187,45 @@
                     </div>
                 </div>
 
-                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
-                    <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
+                <div class="my-5 row d-flex flex-column flex-lg-row align-items-center px-0">
+                    <div class="col-lg-5 order-last order-md-last order-lg-first box-p-res">
                         <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
-                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
+                                <button class="btn btn-white px-3 desc-font-res" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
                             <div class="mb-3">
-                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                                <div class="fw-bold tittle-font-res">Secure & Private</div>
                             </div>
-                            <div style="font-size: 18px">
+                            <div class="desc-font-res">
                                 Industry-leading encryption and non-custodial storage ensure your assets are safe.
                                 Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-first order-md-first order-lg-last">
-                        <div class="d-flex justify-content-center">
-                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
-                            </div>
+                    <div class="col-lg-7 d-flex justify-content-center px-0 order-md-first order-lg-last">
+                        <div style="max-width: 550px; width: 100%;">
+                            <img src="{{ asset('storage/img/img.jpg') }}" alt="Image" class="br-radius-res" style="width: 100%; aspect-ratio: 11 / 12; object-fit: cover;">
                         </div>
                     </div>
                 </div>
-                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
+                <div class="my-5 row d-flex flex-column flex-lg-row align-items-center px-0">
                     <!-- Kolom Gambar -->
-                    <div class="col-lg-6 order-first order-md-first order-lg-first">
-                        <div class="d-flex justify-content-center">
-                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
-                            </div>
+                    <div class="col-lg-7 d-flex justify-content-center px-0 order-first order-md-first order-lg-first">
+                        <div style="max-width: 550px; width: 100%;">
+                            <img src="{{ asset('storage/img/img.jpg') }}" alt="Image" class="br-radius-res" style="width: 100%; aspect-ratio: 11 / 12; object-fit: cover;">
                         </div>
                     </div>
 
                     <!-- Kolom Teks -->
-                    <div class="col-lg-6 order-last order-md-last order-lg-last">
+                    <div class="col-lg-5 order-last order-md-last order-lg-last box-p-res">
                         <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
-                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
+                                <button class="btn btn-white px-3 desc-font-res" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
                             <div class="mb-3">
-                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                                <div class="fw-bold tittle-font-res">Secure & Private</div>
                             </div>
-                            <div style="font-size: 18px">
+                            <div class="desc-font-res">
                                 Industry-leading encryption and non-custodial storage ensure your assets are safe.
                                 Face ID & fingerprint authentication for extra protection.
                             </div>
@@ -242,32 +233,30 @@
                     </div>
                 </div>
 
-                <div class="my-3 row d-flex flex-column flex-lg-row align-items-center">
-                    <div class="col-lg-6 order-last order-md-last order-lg-fisrt">
+                <div class="my-5 row d-flex flex-column flex-lg-row align-items-center px-0">
+                    <div class="col-lg-5 order-last order-md-last order-lg-first box-p-res">
                         <div class="p-0 my-3 h-100 d-flex flex-column justify-content-center">
                             <div class="mb-3">
-                                <button class="btn btn-white px-3" style="border: 1px, solid; border-radius: 12px">security</button>
+                                <button class="btn btn-white px-3 desc-font-res" style="border: 1px, solid; border-radius: 12px">security</button>
                             </div>
                             <div class="mb-3">
-                                <div class="fw-bold" style="font-size: 36px">Secure & Private</div>
+                                <div class="fw-bold tittle-font-res">Secure & Private</div>
                             </div>
-                            <div style="font-size: 18px">
+                            <div class="desc-font-res">
                                 Industry-leading encryption and non-custodial storage ensure your assets are safe.
                                 Face ID & fingerprint authentication for extra protection.
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 order-first order-md-first order-lg-last">
-                        <div class="d-flex justify-content-center">
-                            <div class="" style="max-width: 400px; aspect-ratio:3x4;">
-                                <img src="{{ asset('storage/img/img.jpg') }}" class="img-fluid" style="border-radius: 24px" alt="Image">
-                            </div>
+                    <div class="col-lg-7 d-flex justify-content-center px-0 order-md-first order-lg-last">
+                        <div style="max-width: 550px; width: 100%;">
+                            <img src="{{ asset('storage/img/img.jpg') }}" alt="Image" class="br-radius-res" style="width: 100%; aspect-ratio: 11 / 12; object-fit: cover;">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="nav-x-mg">
+        <section class="nav-x-mg my-5">
             <div class="text-center">Our Services</div>
             {{-- <div class="d-flex flex-column"> --}}
             <!-- BLOK 1: Illustration (Default Terbuka) -->
@@ -382,7 +371,7 @@
             {{-- </div> --}}
         </section>
         <section class="nav-x-mg">
-            <div class="mx-3 py-3">
+            <div class="mx-0 py-3">
                 <div class="row mx-3 g-3 align-items-stretch pt-5">
                     <div class="col-lg-12">
                         <div class="text-primary" id="testimonials">TESTIMONIALS</div>
@@ -472,38 +461,43 @@
             <div class="p-3 mb-3">
                 <!-- Item 1 -->
                 <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
-                    <div class="col-lg-6">
-                        <img src="{{ asset('storage/img/awwward.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    <div class="col-lg-6 p-0">
+                        <div style="max-width: 500px; width: 100%;">
+                            <img src="{{ asset('storage/img/awwward.jpg') }}" alt="" class="img-fluid br-radius-res" style="width: 100%; aspect-ratio: 5 / 3; object-fit: cover;">
+                        </div>
                     </div>
                     <div class="row col-lg-6 align-content-between">
                         <div>
-                            <div style="font-size: 36px;">Awwwards</div>
-                            <div class="my-3">
+                            <div class="tittle-font-res">Awwwards</div>
+                            <div class="my-3 desc-font-res">
                                 We pride ourselves on delivering visual solutions that are not only relevant but also make a real impact for brands.
-                                Our designs are dsigned to resonate, stand out, and deserve to recognized at Awwwards.
+                                Our designs are designed to resonate, stand out, and deserve to be recognized at Awwwards.
                             </div>
                         </div>
-                        <div>
+                        <div class="flex-jus-center">
                             <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
+
                 </div>
                 <hr>
 
                 <!-- Item 2 -->
                 <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
-                    <div class="col-lg-6">
-                        <img src="{{ asset('storage/img/cssaw.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    <div class="col-lg-6 p-0">
+                        <div style="max-width: 500px; width: 100%;">
+                            <img src="{{ asset('storage/img/cssaw.jpg') }}" alt="" class="img-fluid br-radius-res" style="width: 100%; aspect-ratio: 5 / 3; object-fit: cover;">
+                        </div>
                     </div>
                     <div class="row col-lg-6 align-content-between">
                         <div>
-                            <div style="font-size: 36px;">CSS Design Awards</div>
-                            <div class="my-3">
+                            <div class="tittle-font-res">CSS Design Awards</div>
+                            <div class="my-3 desc-font-res">
                                 Every element is designed with great detail to achieve visual perfection that aligns with the brand and user needs.
                                 We beieve design can create impact, and that's what we bring to every pixel.
                             </div>
                         </div>
-                        <div>
+                        <div class="flex-jus-center">
                             <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
@@ -512,17 +506,19 @@
 
                 <!-- Item 3 -->
                 <div class="row mb-4 gx-3 justify-content-center gap-3" style="min-height: 300px;">
-                    <div class="col-lg-6">
-                        <img src="{{ asset('storage/img/reddotaw.jpg') }}" alt="" class="img-fluid" style="height: 300px; width: 100%; object-fit: contain;">
+                    <div class="col-lg-6 p-0">
+                        <div style="max-width: 500px; width: 100%;">
+                            <img src="{{ asset('storage/img/reddotaw.jpg') }}" alt="" class="img-fluid br-radius-res" style="width: 100%; aspect-ratio: 5 / 3; object-fit: cover;">
+                        </div>
                     </div>
                     <div class="row col-lg-6 align-content-between">
                         <div>
-                            <div style="font-size: 36px;">Red Dot Design Award</div>
-                            <div class="my-3">
+                            <div class="tittle-font-res">Red Dot Design Award</div>
+                            <div class="my-3 desc-font-res">
                                 Being recogniced at the Red Dot Design Award is a remarkable achievement that signifies the highest standards in innovation and aesthetics.
                             </div>
                         </div>
-                        <div>
+                        <div class="flex-jus-center">
                             <button class="fw-bold btn btn-more px-4">MORE</button>
                         </div>
                     </div>
