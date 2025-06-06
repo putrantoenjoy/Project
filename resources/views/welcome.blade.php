@@ -475,7 +475,7 @@
                             </div>
                         </div>
                         <div class="flex-jus-center">
-                            <button class="fw-bold btn btn-more px-4">MORE</button>
+                            <button class="fw-bold btn btn-more px-4 desc-font-res">MORE</button>
                         </div>
                     </div>
 
@@ -498,7 +498,7 @@
                             </div>
                         </div>
                         <div class="flex-jus-center">
-                            <button class="fw-bold btn btn-more px-4">MORE</button>
+                            <button class="fw-bold btn btn-more px-4 desc-font-res">MORE</button>
                         </div>
                     </div>
                 </div>
@@ -519,7 +519,7 @@
                             </div>
                         </div>
                         <div class="flex-jus-center">
-                            <button class="fw-bold btn btn-more px-4">MORE</button>
+                            <button class="fw-bold btn btn-more px-4 desc-font-res">MORE</button>
                         </div>
                     </div>
                 </div>
@@ -535,8 +535,8 @@
                 </div>
                 <div class="text-center text-white desc-font-res">Join us in transforming your project from concept to completion</div>
                 <div class="d-flex justify-content-center align-items-center m-3" style="height: 100px;">
-                    <button class="btn btn-light rounded-pill fw-bold px-4" style="font-size: 14px">
-                        <i class="fw-bold bi bi-envelope" style="font-size: 18px"></i> LET'S TALK
+                    <button class="btn btn-light rounded-pill fw-bold px-4 d-flex align-items-center" style="font-size: 14px">
+                        <i class="fw-bold bi bi-envelope" style="font-size: 18px"></i>&nbsp;LET'S TALK
                     </button>
                 </div>
             </div>

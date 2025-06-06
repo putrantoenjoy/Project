@@ -57,6 +57,26 @@
   font-size: clamp(36px, 5vw, 72px);
 }
 
+/* .btn-hover-more {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.btn-hover-more:hover {
+  background-color: #555555;
+  color: white;
+  } */
+  
+.btn-more:hover {    
+  background-color: #000000;
+  color: white;
+}
+
+.btn-light:hover {
+  background-color: #000067;
+  color: white;
+}
+
 /* other */
 @media (min-width: 0px) {
   .page-font-res {
